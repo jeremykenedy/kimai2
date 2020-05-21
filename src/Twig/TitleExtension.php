@@ -43,7 +43,7 @@ class TitleExtension extends AbstractExtension
 
     public function generateTitle(?string $prefix = null, string $delimiter = ' – '): string
     {
-        $title = $this->configuration->getTitle() ?? 'Kimai';
+        $title = $this->configuration->getTitle() ?? 'JK';
 
         return ($prefix ?? '') . ($title) . $delimiter . $this->translator->trans('time_tracking', [], 'messages');
     }

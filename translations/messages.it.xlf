@@ -7,7 +7,7 @@
             -->
             <trans-unit id="time_tracking">
                 <source>time_tracking</source>
-                <target>Time Tracking</target>
+                <target>Time Tracker</target>
             </trans-unit>
             <trans-unit id="yes">
                 <source>yes</source>

@@ -12,16 +12,16 @@ kimai:
 # You can disable some user management functions in the authentication screens.
 # Both settings default to "true", see https://www.kimai.org/documentation/users.html
 # --------------------------------------------------------------------------------
-#    user:
-#        registration: false
-#        password_reset: false
+    user:
+        registration: false
+        password_reset: true
 # --------------------------------------------------------------------------------
 
 
 # --------------------------------------------------------------------------------
 # TIME-TRACKING
 # All configs related to time-tracking, timesheets and record management
-# Most settings can be configured in the System configuration screen     
+# Most settings can be configured in the System configuration screen
 # --------------------------------------------------------------------------------
     timesheet:
 
@@ -107,7 +107,7 @@ kimai:
             RATE_OTHER: ['view_rate_other_timesheet','edit_rate_other_timesheet']
             EXPORT: ['create_export','edit_export_own_timesheet','edit_export_other_timesheet']
             TEAMS: ['view_team','create_team','edit_team','delete_team']
-            # some single default definitions for roles 
+            # some single default definitions for roles
             SINGLE_USER: ['view_team_member','budget_team_project']
             SINGLE_TEAMLEAD: ['view_rate_own_timesheet','view_rate_other_timesheet','hourly-rate_own_profile','view_team_member']
             SINGLE_ADMIN: ['hourly-rate_own_profile','edit_exported_timesheet','teams_own_profile','view_team_member']

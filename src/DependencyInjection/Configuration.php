@@ -370,7 +370,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultTrue()
                 ->end()
                 ->booleanNode('show_about')
-                    ->defaultTrue()
+                    ->defaultFalse()
                 ->end()
                 ->arrayNode('chart')
                     ->addDefaultsIfNotSet()

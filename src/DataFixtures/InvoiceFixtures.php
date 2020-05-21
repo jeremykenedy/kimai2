@@ -89,7 +89,7 @@ class InvoiceFixtures extends Fixture
             ['Invoice (HTML)',            'Company name',    'default',          'default',  'default', $faker->company, 19, 30, $paymentTerms],
             ['Freelancer (HTML, short)',  'Invoice',         'freelancer',       'short',    'default', $faker->company, 19, 14, $paymentTerms_de],
             ['Timesheet (HTML)',          'Timesheet',       'timesheet',        'default',  'default', $faker->company, 19, 7,  $paymentTerms_alt],
-            ['Company invoice (DOCX)',    'Invoice',         'company',          'default',  'default', 'Kimai Inc.',    19, 14, $paymentTerms_alt],
+            ['Company invoice (DOCX)',    'Invoice',         'company',          'default',  'default', 'Jeremy Edgar Kenedy Consulting LLC',    19, 14, $paymentTerms_alt],
         ];
     }
 

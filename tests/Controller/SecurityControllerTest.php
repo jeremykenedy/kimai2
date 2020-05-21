@@ -36,7 +36,7 @@ class SecurityControllerTest extends ControllerBaseTest
         $this->assertTrue($client->getResponse()->isSuccessful());
 
         $content = $response->getContent();
-        $this->assertStringContainsString('<title>Kimai – Time Tracking</title>', $content);
+        $this->assertStringContainsString('<title>Time Tracker</title>', $content);
         $this->assertStringContainsString('<form action="/en/login_check" method="post">', $content);
         $this->assertStringContainsString('<input type="text" name="_username"', $content);
         $this->assertStringContainsString('<input name="_password" type="password"', $content);
@@ -56,7 +56,7 @@ class SecurityControllerTest extends ControllerBaseTest
         $this->assertTrue($response->isSuccessful());
 
         $content = $response->getContent();
-        $this->assertStringContainsString('<title>Kimai – Time Tracking</title>', $content);
+        $this->assertStringContainsString('<title>Time Tracker</title>', $content);
         $this->assertStringContainsString('Register a new account', $content);
         $this->assertStringContainsString('<form name="fos_user_registration_form" method="post" action="/en/register/" class="fos_user_registration_register">', $content);
         $this->assertStringContainsString('<input type="email"', $content);
@@ -96,7 +96,7 @@ class SecurityControllerTest extends ControllerBaseTest
         $this->assertTrue($client->getResponse()->isSuccessful());
 
         $content = $client->getResponse()->getContent();
-        $this->assertStringContainsString('<title>Kimai – Time Tracking</title>', $content);
+        $this->assertStringContainsString('<title>Time Tracker</title>', $content);
         $this->assertStringContainsString('<p>Congrats example, your account is now activated.</p>', $content);
         $this->assertStringContainsString('<a href="/en/homepage">', $content);
     }

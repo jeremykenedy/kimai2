@@ -4,7 +4,7 @@ fos_user:
     user_class: App\Entity\User
     from_email:
         address: '%env(MAILER_FROM)%'
-        sender_name: "Kimai 2"
+        sender_name: "Time Tracker"
     registration:
         confirmation:
             enabled: false
